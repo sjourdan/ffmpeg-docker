@@ -19,7 +19,11 @@ It's available from both [Quay.io](https://quay.io/repository/sjourdan/ffmpeg) a
 
 ### ffserver
 
+TL;DR:
+
     $ docker run -it --rm sjourdan/ffserver:3.0 <options>
+
+Documentation and examples are available under [ffserver/](./ffserver/).
 
 ### ffprobe
 
