@@ -8,22 +8,22 @@ This is a sample usage for FFServer.
 
 - Create a folder where you'll put the mp3 files to stream
 
-      ls ./audio/file1.mp3
+        ls ./audio/file1.mp3
 
 - Create a [sample configuration file](./config/file.conf):
 
-      vim ./config/file.conf
+        vim ./config/file.conf
 
 This is where you'll want to change some settings like the HTTP port or the filename.
 
 - Execute the ffserver container with the audio and config volumes, as well as the configuration file for this case:
 
-      docker run -d \
-      -v `pwd`/audio:/audio \
-      -v `pwd`/config:/etc/ffserver \
-      -p 8090:8090 \
-      sjourdan/ffserver:3.0 \
-      -f /etc/ffserver/file.conf
+        docker run -d \
+        -v `pwd`/audio:/audio \
+        -v `pwd`/config:/etc/ffserver \
+        -p 8090:8090 \
+        sjourdan/ffserver:3.0 \
+        -f /etc/ffserver/file.conf
 
 - You can now access the _stats_ page from your browser: [http://192.168.99.100:8090/stat.html](http://192.168.99.100:8090/stat.html) by default on docker-machine or [http://127.0.0.1:8090/stat.html](http://127.0.0.1:8090/stat.html) on linux and note the stream of the file is available. There's some information about the number of connexions, the bandwidth etc.
 
