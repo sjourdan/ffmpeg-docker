@@ -8,7 +8,6 @@ WORKDIR /tmp
 
 RUN wget -q http://johnvansickle.com/ffmpeg/releases/ffmpeg-release-64bit-static.tar.xz \
   && tar xJf /tmp/ffmpeg-release-64bit-static.tar.xz -C /tmp \
-  && ls /tmp/ \
   && mv /tmp/ffmpeg-3.0-64bit-static/ffmpeg /usr/local/bin/ \
   && mv /tmp/ffmpeg-3.0-64bit-static/ffserver /usr/local/bin/ \
   && mv /tmp/ffmpeg-3.0-64bit-static/ffprobe /usr/local/bin/ \

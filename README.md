@@ -1,5 +1,7 @@
 # FFMPEG Docker Container
 
+[![Docker Repository on Quay](https://quay.io/repository/sjourdan/ffmpeg/status "Docker Repository on Quay")](https://quay.io/repository/sjourdan/ffmpeg)
+
 This is [FFMPEG](https://ffmpeg.org/) (`ffmpeg`, `ffserver`, `ffprobe` etc.) on Alpine, using the [latest static build](https://ffmpeg.org/download.html#build-linux).
 
 ## Usage
